@@ -64,7 +64,7 @@ const run = async () => {
     }
   } catch(err) {
       if (err) {
-        switch (err.code) {
+        switch (err.status) {
           case 401:
             console.log(chalk.red('Couldn\'t log you in. Please provide correct credentials/token.'));
             break;
